@@ -99,29 +99,29 @@
     function SquareLoop() {
       var canvas = document.getElementById("canvas");
       var ctx = canvas.getContext('2d');
-      var x = 65;
-      var d = 10;
-      var under = 36;
-      var bottom = canvas.height - under - 64;
-      var side = 40;
-      var sizeX = 80;
-      var sizeY = 12;
-      var hitSizeY = 15;
+      const x = 65;
+      const d = 10;
+      const under = 36;
+      const bottom = canvas.height - under - 64;
+      const side = 40;
+      const sizeX = 80;
+      const sizeY = 12;
+      const hitSizeY = 15;
+      const hp = 30;
+      const damage = 10;
+      const max = 1200;
+      const length = 6;
+      const key = [83, 68, 70, 74, 75, 76];
       var keyFlags = [false, false, false, false, false, false];
       var keyFlag = true;
       var num1 = 0;
       var num2 = 0;
       var p = 0;
       var j = 0;
-      var hp = 30;
       var c = 0;
       var space = 0;
-      const damage = 10;
-      var max = 1200;
-      var length = 6;
       var initial = [];
       var count = [0, 0, 0, 0, 0, 0];
-      const key = [83, 68, 70, 74, 75, 76];
 
       // ノーツ初期座標セット
       for (i = 0; i < length; i++) {
